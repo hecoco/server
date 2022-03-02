@@ -38,6 +38,7 @@ var server = http.createServer(function (request, response) {
     } catch (error) {
         response.statusCode = 404
     }
+    response.write(content)
     response.end()
 
 
