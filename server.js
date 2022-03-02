@@ -23,7 +23,7 @@ var server = http.createServer(function (request, response) {
 
 
     response.statusCode = 200
-    const filePath = path === '/' ? 'index.html' : path
+    const filePath = path === '/' ? '/index.html' : path
     const index = filePath.lastIndexOf('.')
     const suffix = filePath.substring(index)
     const fileTypes = {
